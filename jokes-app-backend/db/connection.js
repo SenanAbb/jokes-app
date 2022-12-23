@@ -3,7 +3,7 @@ import mysql from "mysql";
 const db_conn = mysql.createConnection({
     host: "localhost",
     user: "root",
-    password: "",
+    password: "root",
     database: "jokes_app",
 });
 
