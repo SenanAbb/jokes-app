@@ -1,0 +1,12 @@
+CREATE DATABASE IF NOT EXISTS jokes_app;
+
+USE jokes_app;
+
+DROP TABLE IF EXISTS jokes;
+CREATE TABLE IF NOT EXISTS jokes (
+  id INT NOT NULL AUTO_INCREMENT,
+  type varchar(255) NOT NULL,
+  setup varchar(255) NOT NULL,
+  punchline varchar(255) NOT NULL,
+  PRIMARY KEY (id)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
