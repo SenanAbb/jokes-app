@@ -68,4 +68,5 @@ where [password] is the server password (*root*) and then: `flush privileges;`
 
 To verify that this has been done, we must go to the mysql console (the one used to create the database previously. If it has been closed, open another terminal and execute the steps in point 1.10 to re-enter the server and be able to see the databases) and write the command `SELECT COUNT(*) FROM jokes;`. This returns the total number of rows in the table, which must be greater than 0, and in this case, 400.
 
+With all this, we already have the database initialized. We can now execute the API to receive requests.
 
