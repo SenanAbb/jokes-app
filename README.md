@@ -49,6 +49,7 @@ If everything went well, we have finished creating our database. We can now star
  - Express
  - mysql
  - node-fetch
+ - cors
  - Nodemon (development dependencie)
 
 If everything went well we will see that the new folder *node_modules* has been created in the directory
