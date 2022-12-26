@@ -1,15 +1,9 @@
 export const getNewJoke = async () => {
     try {
-        const response = await fetch('http://localhost:4000/', {
-            headers: {
-                "Access-Control-Allow-Origin": "<your origin>",
-            }
-        })
-        console.log(response);
+        const response = await fetch('http://localhost:4000/')
         const joke = await response.json();
-        console.log(joke)
         return joke;
     } catch (error) {
-        console.log(error);
+        console.error(error)
     }
 }

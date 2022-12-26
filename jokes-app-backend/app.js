@@ -10,7 +10,6 @@ app.use(cors({ origin: "http://localhost:3000" }));
 // Se debe exportar a un archivo aparte, en una carpeta Routes, por ejemplo, y luego importarlo con app.use
 // Al hacerlo así, se puede tener un archivo de rutas por cada recurso, y así no se sobrecarga el archivo principal
 // Pero en este caso, como solo hay una ruta, se puede dejar así
-
 app.get("/", async (req, res) => {
   const random = Math.floor(Math.random() * 400) + 1;
   db_conn.query("SELECT * FROM jokes WHERE id = ?", [random], (err, rows) => {
