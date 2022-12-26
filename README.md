@@ -70,3 +70,10 @@ To verify that this has been done, we must go to the mysql console (the one used
 
 With all this, we already have the database initialized. We can now execute the API to receive requests.
 
+To do this, we run the `nodemon` command from the terminal. The server will start, and if everything went well, we should see the message "Listening on port 4000" on the console. The server is now ready to receive requests from the client.
+
+**2.5.** Let's initialize the client. To do this, from another terminal, we move to the route */jokes-app/jokes-app-frontend*. Once in the folder, we run the `npm i` command. The necessary packages will be installed to be able to execute the client. If everything went well, we will see that the new **node_modules** folder has been created, where all the project dependencies are located.
+
+Once this is done, all that remains is to run the client with the `npm run dev` command. Let's remember that both in the frontend and in the backend we are working in development mode, if we want to work in production mode the commands are slightly different, but we are not going to see this in this project.
+
+Now that the client is running, all that remains is to open a browser and go to the URL *http://locahost:3000* and use the application.
