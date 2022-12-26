@@ -13,6 +13,7 @@ app.use(cors({ origin: "http://localhost:3000" }));
 
 // También es buena práctica crear modelos para cada tabla de la base de datos, y luego importarlos en el archivo de rutas
 // En este caso, se puede dejar así, pero en un proyecto real, se recomienda hacerlo
+
 app.get("/", async (req, res) => {
   const random = Math.floor(Math.random() * 400) + 1;
   db_conn.query("SELECT * FROM jokes WHERE id = ?", [random], (err, rows) => {
